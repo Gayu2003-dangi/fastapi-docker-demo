@@ -9,20 +9,17 @@ A simple FastAPI application containerized using Docker.
 - Uvicorn
 - Docker
 
+## Docker Image
+
+Docker Hub Image:
+
+gayudangi/fastapi-app:v1
+
 ## Run with Docker
 
 Pull the Docker image:
 
+```bash
 docker pull gayudangi/fastapi-app:v1
 
-Run the container:
-
-docker run -p 8000:8000 gayudangi/fastapi-app:v1
-
-Open in browser:
-
-http://localhost:8000
-
-## Docker Hub
-
-Docker image: gayudangi/fastapi-app:v1
+docker run -d --name fastapi-demo -p 8001:8000 gayudangi/fastapi-app:v1
